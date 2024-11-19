@@ -122,15 +122,15 @@ body {
   }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   body {
-    background-attachment: scroll; /* Remove fixed background on mobile */
+    background-attachment: scroll; 
   }
 
   .home {
     padding: 20px;
-    height: auto; /* Allow height to adjust */
+    height: auto; 
   }
 
   .home h1 {
@@ -155,8 +155,11 @@ body {
   }
 }
 
-/* Extra small screens (up to 480px) */
+
 @media (max-width: 480px) {
+  .home {
+    margin-top: 100px;
+  }
   .home h1 {
     font-size: 1.8rem;
     letter-spacing: 1px;
@@ -177,3 +180,6 @@ body {
     padding: 6px;
   }
 }
+
+
+
