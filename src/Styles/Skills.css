@@ -1,0 +1,96 @@
+.skills-container {
+  padding: 40px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: transparent;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #38b2ac;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #38b2ac, #ffbe0b);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+.skills-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
+}
+
+.skill-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.skill-bar:hover {
+  transform: scale(1.05);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: goldenrod;
+  margin-bottom: 8px;
+}
+
+.progress {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  height: 15px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.progress-fill {
+  background-color: #38b2ac;
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+  animation: loadingAnim 2s linear infinite;
+}
+
+@keyframes loadingAnim {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: var(--progress-width);
+  }
+  100% {
+    width: var(--progress-width);
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .skills-row {
+    grid-template-columns: 1fr;
+  }
+}

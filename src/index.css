@@ -1,0 +1,188 @@
+/* Global reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Corrected from 'none' to 'hidden' */
+}
+
+/* Body styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4; /* Optional background color */
+  color: #333; /* Default text color */
+  line-height: 1.6;
+}
+
+/* Code styling */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Responsive typography */
+html {
+  font-size: 16px; /* Set base font size */
+}
+
+/* Responsive font sizes using rem */
+body {
+  font-size: 1rem; /* 1rem = 16px by default */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem; /* 40px */
+}
+
+h2 {
+  font-size: 2rem; /* 32px */
+}
+
+h3 {
+  font-size: 1.75rem; /* 28px */
+}
+
+h4 {
+  font-size: 1.5rem; /* 24px */
+}
+
+h5 {
+  font-size: 1.25rem; /* 20px */
+}
+
+h6 {
+  font-size: 1rem; /* 16px */
+}
+
+/* Responsive media queries */
+@media (max-width: 1200px) {
+  /* Adjustments for large tablets or smaller screens */
+  h1 {
+    font-size: 2.2rem; /* 35px */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* 28px */
+  }
+
+  h3 {
+    font-size: 1.6rem; /* 26px */
+  }
+}
+
+@media (max-width: 992px) {
+  /* Adjustments for medium tablets or smaller devices */
+  body {
+    font-size: 0.9rem; /* 14.4px */
+  }
+
+  h1 {
+    font-size: 2rem; /* 32px */
+  }
+
+  h2 {
+    font-size: 1.6rem; /* 25px */
+  }
+
+  h3 {
+    font-size: 1.4rem; /* 22px */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjustments for tablets and smaller screens */
+  body {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* 28px */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  h3 {
+    font-size: 1.3rem; /* 20px */
+  }
+
+  h4 {
+    font-size: 1.2rem; /* 19px */
+  }
+
+  h5 {
+    font-size: 1rem; /* 16px */
+  }
+
+  h6 {
+    font-size: 0.875rem; /* 14px */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjustments for small screens (phones in portrait mode) */
+  body {
+    font-size: 0.85rem; /* 13.6px */
+  }
+
+  h1 {
+    font-size: 1.6rem; /* 25px */
+  }
+
+  h2 {
+    font-size: 1.4rem; /* 22px */
+  }
+
+  h3 {
+    font-size: 1.2rem; /* 19px */
+  }
+
+  h4, h5, h6 {
+    font-size: 1rem; /* 16px */
+  }
+}
+
+/* Utility class for full width on small screens */
+.full-width {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Mobile-friendly flexbox */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item {
+  margin: 10px;
+}
+
+/* Images to be responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #005fa3;
+}
